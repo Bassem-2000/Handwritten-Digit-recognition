@@ -13,37 +13,35 @@ For example, pixel31 indicates the pixel that is in the fourth column from the l
 The goal in this competition is to take an image of a handwritten single digit, and determine what that digit is.
 For every in the test set, should predict the correct label.
 
-## Installation Instructions:
-- I have provided a Txt file that contains all the libraries that you need to run the notebook the file name is **"requirements.txt"** and also provides **"conda.yaml"** these two files for the final model.
-- If you want to use mlflow and see the experiment tracking I did, you can use this command in cmd after activating the environment **"mlflow server --backend-store-uri sqlite:///mlflow.db --default-artifact-root ./artifacts --host 0.0.0.0 --port 5000"** before this you should download the database and the artifacts file.
-- just download the dataset from this **[Dataset](https://www.kaggle.com/datasets/abdallahalidev/plantvillage-dataset)** then download the repo and here you are ready to run the code or you can use the model.h5 instead of all the steps.
+## Installation Instructions:.
+- just download the dataset from this **[Dataset](https://www.kaggle.com/competitions/digit-recognizer/data)** or just download the files in github then download the repo and here you are ready to run the code or you can use the model.h5 instead of all the steps.
 
 ## Usage Guide:
-- I used the train dataset from the file **train.csv** to get the pixels of the images and convert thrm to float32.
+- I used the train dataset from the file **train.csv** to get the pixels of the images and convert them to float32.
   
- ![dataframe](https://github.com/Bassem-2000/Images/blob/main/dataframe.png?raw=true)
+ ![dataframe](https://github.com/Bassem-2000/Images/blob/main/dataset.png)
  
-- after that, I used ImageDataGenerator from keras to load the data by applying some data augmentation to the training dataset here is the snippet
+- After that, I used ImageDataGenerator from keras to load the data by applying some data augmentation to the training dataset here is the snippet
   
- ![ImageDataGenerator](https://github.com/Bassem-2000/Images/blob/main/ImageDataGenerator.png?raw=true)
+ ![ImageDataGenerator](https://github.com/Bassem-2000/Images/blob/main/Imagedatagenrator0.png)
 
 ## Model Architecture:
 - I used the a simple Architecture by Vanila CNN and my  final model and architecture are done by applying some neurons in last part here is the snippet for the model summary
   
- ![Architecture](https://github.com/Bassem-2000/Images/blob/main/Architecture.png?raw=true)
+ ![Architecture](https://github.com/Bassem-2000/Images/blob/main/Summary.png)
 
 
 ## Evaluation:
 - I used Two approaches to test the performance of the architecture and the model like accuracy and loss. here are the final model performance:
   
- ![Accuracy](https://github.com/Bassem-2000/Images/blob/main/accuracy.png?raw=true)
- ![Loss](https://github.com/Bassem-2000/Images/blob/main/Loss.png?raw=true)
+ ![Accuracy](https://github.com/Bassem-2000/Images/blob/main/accu.png)
+ ![Loss](https://github.com/Bassem-2000/Images/blob/main/LOSSSS.png)
 
 
 ## Example:
-- I test the model with a random image and visualize it here you can see the image with the prediction:
+- I test the model with a random images and visualize it here you can see the image with the prediction as title and the real image:
 
- ![Example](https://github.com/Bassem-2000/Images/blob/main/Example.png?raw=true)
+ ![Example](https://github.com/Bassem-2000/Images/blob/main/exa.png)
 
 
 ## Contact:
