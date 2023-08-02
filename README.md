@@ -14,12 +14,16 @@ The goal in this competition is to take an image of a handwritten single digit, 
 For every in the test set, should predict the correct label.
 
 ## Installation Instructions:.
-- just download the dataset from this **[Dataset](https://www.kaggle.com/competitions/digit-recognizer/data)** or just download the files in github then download the repo and here you are ready to run the code or you can use the model.h5 instead of all the steps.
+- just download the dataset from this **[Dataset](https://www.kaggle.com/competitions/digit-recognizer/data)** or just download the files in github then download the repo and here you are ready to run the code or you can use the model.h5 instead of all these steps.
 
 ## Usage Guide:
 - I used the train dataset from the file **train.csv** to get the pixels of the images and convert them to float32.
   
  ![dataframe](https://github.com/Bassem-2000/Images/blob/main/dataset.png)
+
+- I plot the distribution of the classes to see if there any imbalance in the data but it looks good as you can see
+
+   ![ImageDataGenerator](https://github.com/Bassem-2000/Images/blob/main/dist.png)
  
 - After that, I used ImageDataGenerator from keras to load the data by applying some data augmentation to the training dataset here is the snippet
   
