@@ -19,33 +19,33 @@ For every in the test set, should predict the correct label.
 ## Usage Guide:
 - I used the train dataset from the file **train.csv** to get the pixels of the images and convert them to float32.
   
- ![dataframe](https://github.com/Bassem-2000/Images/blob/main/dataset.png)
+ ![dataframe](https://github.com/Bassem-2000/Handwritten-Digit-recognition/blob/main/Digits/dataset.png?raw=true)
 
 - I plot the distribution of the classes to see if there any imbalance in the data but it looks good as you can see
 
-   ![ImageDataGenerator](https://github.com/Bassem-2000/Images/blob/main/dist.png)
+   ![Dist](https://github.com/Bassem-2000/Handwritten-Digit-recognition/blob/main/Digits/dist.png?raw=true)
  
 - After that, I used ImageDataGenerator from keras to load the data by applying some data augmentation to the training dataset here is the snippet
   
- ![ImageDataGenerator](https://github.com/Bassem-2000/Images/blob/main/Imagedatagenrator0.png)
+ ![ImageDataGenerator](https://github.com/Bassem-2000/Handwritten-Digit-recognition/blob/main/Digits/Imagedatagenrator0.png?raw=true)
 
 ## Model Architecture:
 - I used the a simple Architecture by Vanila CNN and my  final model and architecture are done by applying some neurons in last part here is the snippet for the model summary
   
- ![Architecture](https://github.com/Bassem-2000/Images/blob/main/Summary.png)
+ ![Architecture](https://github.com/Bassem-2000/Handwritten-Digit-recognition/blob/main/Digits/Summary.png?raw=true)
 
 
 ## Evaluation:
 - I used Two approaches to test the performance of the architecture and the model like accuracy and loss. here are the final model performance:
   
- ![Accuracy](https://github.com/Bassem-2000/Images/blob/main/accu.png)
- ![Loss](https://github.com/Bassem-2000/Images/blob/main/LOSSSS.png)
+ ![Accuracy](https://github.com/Bassem-2000/Handwritten-Digit-recognition/blob/main/Digits/accu.png?raw=true)
+ ![Loss](https://github.com/Bassem-2000/Handwritten-Digit-recognition/blob/main/Digits/LOSSSS.png?raw=true)
 
 
 ## Example:
 - I test the model with a random images and visualize it here you can see the image with the prediction as title and the real image:
 
- ![Example](https://github.com/Bassem-2000/Images/blob/main/exa.png)
+ ![Example](https://github.com/Bassem-2000/Handwritten-Digit-recognition/blob/main/Digits/exa.png?raw=true)
 
 
 ## Contact:
